@@ -1,0 +1,15 @@
+﻿@model SearchViewModel
+@{
+    ViewData["Title"] = "SearchURL";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Search</h1>
+</div>
+
+@using (Html.BeginForm("SearchURL", "Home", FormMethod.Post))
+{
+    @Html.TextBoxFor(model => model.searchURL)
+    <input type="submit" value="Submit"/>
+}
+
